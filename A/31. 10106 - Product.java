@@ -5,15 +5,16 @@ class Solution
 {
     public static void main (String args[])
     {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         
-        while (scanner.hasNext())
+        while (sc.hasNext())
         {
-            BigInteger X = scanner.nextBigInteger();
-            BigInteger Y = scanner.nextBigInteger();
+            BigInteger X = sc.nextBigInteger();
+            BigInteger Y = sc.nextBigInteger();
             
             
             System.out.printf("%s\n", X.multiply(Y));
         }
+        sc.close() ;
     }
 }
